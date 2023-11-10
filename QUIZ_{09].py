@@ -1,3 +1,4 @@
+
 import re
 
 def validate_resident_id(resident_id):
