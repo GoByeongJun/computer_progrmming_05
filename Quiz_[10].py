@@ -15,5 +15,5 @@ def generate_lotto_numbers():
 
     print(f"생성된 로또 번호는 {lotto_numbers} 입니다.")
 
-
+#123
 generate_lotto_numbers()
