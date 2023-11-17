@@ -7,22 +7,18 @@ class Beverage:
         total_price = self.price * quantity
         return total_price
 
-# 음료 객체 생성
 Coffee = Beverage("커피", 3000)
 GreenTea = Beverage("녹차", 2500)
 IceTea = Beverage("아이스티", 3000)
 
-# 첫 번째 사용자 입력
 selected_beverage = input("주문할 음료를 선택하세요 (커피/녹차/아이스티): ")
 selected_beverage = selected_beverage.strip()
 
-# 사용자 입력 검증
 if selected_beverage not in ["커피", "녹차", "아이스티"]:
     print("잘못된 음료를 선택하셨습니다.")
 else:
     quantity = int(input("수량을 입력하세요: "))
 
-    # 두 번째 사용자 입력 및 계산
     if selected_beverage == "커피":
         total = Coffee.calculate(quantity)
     elif selected_beverage == "녹차":
